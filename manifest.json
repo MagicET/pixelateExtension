@@ -1,0 +1,17 @@
+{
+  "name": "Pixelate",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "This extension set image-rendering style of images to pixelated which one of resolutions are under 256 to pixelated.",
+  "content_scripts": [{
+    "matches": [ "http://*/*", "https://*/*" ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "icons": {
+    "16": "./icon16.png",
+    "48": "./icon48.png",
+    "128": "./icon128.png"
+  }
+}
